@@ -146,3 +146,12 @@ future reference and maintenance of the project.
 3. Dedicate time to troubleshooting any remaining bugs or issues identified during testing or
 implementation. Address these issues systematically, ensuring that the application is free from
 critical defects before deployment.
+
+
+## Weekly Plan 
+
+1. Setup the connection and work flows.
+
+2. Creating django app in the same project.
+
+3. Designing some parts of frontend like client page.
