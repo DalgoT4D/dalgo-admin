@@ -2,17 +2,19 @@
 
 ## Designing and Implementing UI
 
-### Step 1
+### Week 0
 
 - Verify the local setup of the project by collaborating with the maintainer, ensuring smooth
 installation and configuration processes for development environment components.
 
-### Step 2
+### Week 1
+
+- Setup the connection and pipelines.
 
 - Begin the design phase of the administrative console based on requirements provided by the
 mentor, focusing on user interface (UI) and user experience (UX) considerations.
 
-### Step 3
+### Week 2
 
 - Begin the design phase of the administrative console based on requirements provided by the
 mentor, focusing on user interface (UI) and user experience (UX) considerations.
@@ -30,7 +32,7 @@ the design accordingly.
 
 ## Backend Functionalities
 
-### Step 1
+### Week 3
 
 - Dive deep into the Django backend to gain a comprehensive understanding of its structure and
 functionality. Discuss with the maintainer to clarify the specific requirements and needs of the
@@ -40,7 +42,7 @@ backend for the project.
 can be retrieved, stored, and manipulated as intended, maintaining the integrity of the
 application's data management system.
 
-### Step 2
+### Week 4
 
 - Establish the connection between the Django backend and React frontend by implementing the
 Django RESTful API. Verify that data can be exchanged smoothly between the frontend and
@@ -76,7 +78,7 @@ views that we can use to build our API quickly:
 
     ![alt text](image-4.png)
 
-### Step 3
+### Week 5
 
 - **Connect React to DJango Backend** 
 
@@ -102,7 +104,7 @@ served the web page.
     prompting a re-render to display the todos. This process establishes a connection between the React
     frontend and the Django backend, enabling smooth data exchange.
 
-### Step 4
+### Week 6
 
 1. Review the overall structure of the project to ensure it aligns with the expected goals and
 objectives. Verify that the project organization, architecture, and implementation meet the
@@ -111,7 +113,7 @@ adjustments to ensure the project's integrity and coherence.
 
 ## Troubleshooting, Testing and Documentation
 
-### Step 1
+### Week 7
 
 1. Focus on managing the pages created for infrastructure components such as Airbyte jobs and
 Prefect Jobs. Ensure that these pages are effectively structured, provide relevant information,
@@ -122,7 +124,7 @@ This includes recording data on job durations, historical analysis of jobs by co
 and insights into machine utilization patterns throughout the day. Ensure that these metrics are
 accurately captured and presented in a user-friendly manner for analysis and decision-making.
 
-### Step 2
+### Week 8
 
 1. Utilize the pytest framework to conduct comprehensive testing, covering various types of
 software tests such as unit tests, integration tests, end-to-end tests, and functional tests. These
@@ -133,7 +135,7 @@ coverage and implement additional tests as needed to achieve the desired level o
 will help identify potential issues and vulnerabilities within the application, allowing for timely
 resolution before deployment.
 
-### Step 3
+### Week 9
 
 1. Review the test suite to ensure that all aspects of the application are adequately covered, as
 instructed by the mentor. Make adjustments or additions to tests as necessary to achieve
@@ -149,6 +151,8 @@ critical defects before deployment.
 
 
 ## Weekly Plan 
+
+### Week 1
 
 1. Setup the connection and work flows.
 
