@@ -16,19 +16,11 @@ mentor, focusing on user interface (UI) and user experience (UX) considerations.
 
 ### Week 2
 
-- Begin the design phase of the administrative console based on requirements provided by the
-mentor, focusing on user interface (UI) and user experience (UX) considerations.
-
 - Create a React application to implement the designed UI for the administrative console. Set up
 the project environment and scaffold the necessary components and dependencies to begin
 development.
 
-- Finish building the React UI for the admin console, making sure all the components and features
-are in place as designed.
-
-- Address any weaknesses or areas for improvement identified in the design of the administrative
-console. Incorporate feedback and guidance provided by the maintainer to refine and enhance
-the design accordingly.
+- Start executing the decided design of the UI.
 
 ## Backend Functionalities
 
@@ -41,8 +33,6 @@ backend for the project.
 - Ensure that the Django backend is properly connected to the existing database. Verify that data
 can be retrieved, stored, and manipulated as intended, maintaining the integrity of the
 application's data management system.
-
-### Week 4
 
 - Establish the connection between the Django backend and React frontend by implementing the
 Django RESTful API. Verify that data can be exchanged smoothly between the frontend and
@@ -78,7 +68,7 @@ views that we can use to build our API quickly:
 
     ![alt text](image-4.png)
 
-### Week 5
+### Week 5 and Week 6
 
 - **Connect React to DJango Backend** 
 
@@ -104,9 +94,7 @@ served the web page.
     prompting a re-render to display the todos. This process establishes a connection between the React
     frontend and the Django backend, enabling smooth data exchange.
 
-### Week 6
-
-1. Review the overall structure of the project to ensure it aligns with the expected goals and
+4. Review the overall structure of the project to ensure it aligns with the expected goals and
 objectives. Verify that the project organization, architecture, and implementation meet the
 desired standards and effectively fulfill the project requirements. Make any necessary
 adjustments to ensure the project's integrity and coherence.
