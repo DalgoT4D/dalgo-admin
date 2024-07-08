@@ -50,6 +50,12 @@ from django.db import models
 
 class ExistingModel(models.Model):
     name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.description
+    
+    class Meta:
+        app_label = 'existing_app'
 ```
 
 ### Run Migrations
@@ -82,30 +88,47 @@ class NewAppRouter:
     new_app application.
     """
 
+   class NewAppRouter:
+    """
+    A router to control all database operations on models in the
+    new_app application.
+    """
+
     def db_for_read(self, model, **hints):
-        """Point all operations on new_app models to 'new_app_db'"""
+        """Point all operations on new_app models to 'new_app_db'."""
         if model._meta.app_label == 'new_app':
             return 'new_app_db'
-        return None
+        return None  
 
     def db_for_write(self, model, **hints):
-        """Point all operations on new_app models to 'new_app_db'"""
+        """Point all operations on new_app models to 'new_app_db'."""
         if model._meta.app_label == 'new_app':
             return 'new_app_db'
-        return None
+        return None 
 
     def allow_relation(self, obj1, obj2, **hints):
         """Allow any relation if a model in new_app is involved."""
         if obj1._meta.app_label == 'new_app' or obj2._meta.app_label == 'new_app':
             return True
-        return None
+        return None  
 
     def allow_migrate(self, db, app_label, model_name=None, **hints):
         """Make sure the new_app's models get created on the right database."""
         if app_label == 'new_app':
             return db == 'new_app_db'
+        return None 
+
+    def allow_write(self, db, app_label, **hints):
+        """Prevent write access to the default database for new_app models."""
+        if app_label == 'new_app' and db == 'default':
+            return False  # Deny write access to the default database for new_app models
         return None
+
 ```
+
+- Here `return none` takes the Django to the default database.
+
+- Here `def allow_write` denies new database to write access on existing database.
 
 ### Add the Router to settings.py
 
@@ -118,6 +141,12 @@ from django.db import models
 
 class NewAppModel(models.Model):
     description = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.description
+    
+    class Meta:
+        app_label = 'new_app'
 ```
 
 ### Run Migrations for the New App 
